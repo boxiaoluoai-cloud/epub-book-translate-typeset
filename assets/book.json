@@ -1,0 +1,64 @@
+{
+  "title_zh": "书名",
+  "subtitle_zh": "副标题（可留空字符串）",
+  "author_zh": "作者名（英文名）　著",
+  "original": "Original Title: Subtitle<br/>Author Name<br/>Publisher（Imprint），Year",
+
+  "toc_title": "目　录",
+  "guide_label": "导读",
+
+  "src_dir": "work/src",
+  "zh_dir": "work/zh",
+  "out_dir": "output",
+  "build_dir": "work",
+  "images_subdir": "images",
+
+  "html_name": "书名.html",
+  "pdf_name": "书名.pdf",
+  "raw_pdf": "_raw.pdf",
+
+  "epub": {
+    "path": "C:/path/to/book.epub",
+    "units": [
+      {"file": "00_preface", "href": "OEBPS/xhtml/005_c001_Preface"},
+      {"file": "01_ch01_topic", "href": "OEBPS/xhtml/007_c002_Chapter_1"}
+    ]
+  },
+
+  "css": null,
+  "browser": null,
+  "head_font": null,
+  "render_wait_ms": 3000,
+  "folio_from": 2,
+
+  "skip_img": ["page_", "cover", "title_page", "next-reads", "logo"],
+  "head_on_block": [],
+
+  "latin_allow": ["SOP", "ROI", "KPI"],
+
+  "part_ornament": null,
+  "chapter_ornament": null,
+
+  "parts": [
+    {"id": "part1", "num": "第一部分", "title": "第一部分标题", "en": "Part One"}
+  ],
+
+  "units": [
+    {"file": "00_preface", "anchor": "preface", "label": "序言", "front": true},
+    {"file": "01_ch01_topic", "anchor": "ch1", "label": "第 1 章", "part": "part1"},
+    {"file": "02_ch02_topic", "anchor": "ch2", "label": "第 2 章", "part": "part1"}
+  ],
+
+  "guide": {
+    "min_paras": 2,
+    "max_paras": 3,
+    "min_chars": 240,
+    "max_chars": 360
+  },
+
+  "tail": [
+    "本中译本据 <原书版本信息> 译出，含……",
+    "按本次翻译范围，未含原书的……；正文中提及上述部分之处，可据此对照原书。",
+    "原书插图中的英文标注保留原貌，图下中文图注为译者据正文补写。"
+  ]
+}
